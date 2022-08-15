@@ -1,0 +1,163 @@
+/* CSS HEX
+--black: #000000ff;
+--eerie-black: #1a1a1aff;
+--dim-gray: #666a68ff;
+--denim: #0a5cb8ff;
+--white: #ffffffff; */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Information Bar */
+
+/* .header .texto_superior {
+    background-color: #000000ff;
+    display: flex;
+    padding: 10px;
+} */
+
+.texto_superior{
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+  }
+
+/* NavBar 1 */
+
+.header .navbar1 {
+    background-color: #1a1a1aff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .navbar1 ul {
+    list-style: none;
+    display: flex;
+}
+
+.header .logo {
+    width: 150px;
+    padding: 10px;
+}
+
+/* NavBar 2 */
+
+.header .navbar2 {
+    background-color: #000000ff;
+    display: flex;
+    justify-content: space-around    
+ }
+
+.header .navbar2 ul {
+    list-style: none;
+    display: flex;
+    padding: 20px;
+         
+}
+
+.header .navbar2 li {
+    padding: 10px;
+        
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header a:hover {
+    color: #0a5cb8ff;
+    font-size: larger;
+}
+
+/* Main */
+
+.banners{
+    width: 100%; 
+    display: flex;
+}
+
+.title {
+    text-align: center;
+    padding: 20px;
+  }
+
+/* Footer */
+
+
+footer{
+    background-color:#1a1a1aff;
+    color: white;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .social{
+    width: 25px;
+  } 
+
+.footer ul{
+    display: flex;
+    list-style: none;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .main-index, .main-nosotros, .main-contacto, .main-productos, .main-carrito {
+    background: rgb(102,106,104);
+background: radial-gradient(circle, rgba(102,106,104,1) 0%, rgba(102,106,104,1) 35%, rgba(10,92,184,1) 100%);
+  }
+
+  .main-index, .main-nosotros, .main-contacto, .main-productos, .main-carrito .title{
+    color: white;
+  }
+
+  /* Medias Query */
+
+
+@media (max-width: 480px) {
+    .texto_superior{
+        font-size: 100%;
+      }
+    .header .navbar1 {
+        flex-direction: column;
+    }
+
+    .header .logo {
+        width: 100px;
+        padding: 15px;
+    }
+
+    .header .navbar1 ul {
+        padding: 20px;
+    }
+
+    footer{
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column-reverse;        
+    }
+
+    .footer .social{
+        width: 15px;    
+    }
+
+    .banners{
+        width: 100%;  
+    }
+}
