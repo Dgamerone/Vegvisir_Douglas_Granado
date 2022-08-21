@@ -113,19 +113,6 @@ body {
 
 }
 
-/* .productos-container .Producto-1, .Producto-2, .Producto-3, .Producto-4, .Producto-5, .Producto-6{
-  width: 220px;
-  height: 350px;
-  background-color: white;
-  border-radius: 15px;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  margin: 30px;
-  text-align: center;
-  transition: all 0.25s;  
-
-} */
-
 .productos-container .Producto-index{
   width: 220px;
   height: 350px;
@@ -139,32 +126,15 @@ body {
 
 }
 
-/* .productos-container .Producto-:hover, .Producto-2:hover, .Producto-3:hover, .Producto-4:hover, .Producto-5:hover, .Producto-6:hover{
-  transform: translateY(-15px);
-  box-shadow: 0 12px 16px rgba(0, 0, 0, 0,2);
-} */
-
 .productos-container .Producto-index:hover{
   transform: translateY(-15px);
   box-shadow: 0 12px 16px rgba(0, 0, 0, 0,2);
 }
 
-/* .productos-container .Producto-1 img, .Producto-2 img, .Producto-3 img, .Producto-4 img, .Producto-5 img, .Producto-6 img{
-  width: 220px;
-  height: 230px;
-} */
-
 .productos-container .Producto-index img{
   width: 220px;
   height: 230px;
 }
-
-/* .productos-container .Producto-1 a, .Producto-2 a, .Producto-3 a, .Producto-4 a, .Producto-5 a, .Producto-6 a{
-  text-decoration: none; 
-  font-size: auto;
-  color: #0a5cb8ff;
-  font-weight: bold;
-} */
 
 .productos-container .Producto-index a{
   text-decoration: none; 
@@ -173,29 +143,14 @@ body {
   font-weight: bold;
 }
 
-
-
 .productos-container{
   font-size: auto;
   color: #1a1a1aff;
 }
 
-.productos-container .Video-1, .Video-2{
-  width: 800px;
-  height: 500px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+/* Videos */
 
-  }
-
-.videos-container{
-  width: 100%;
-  height: 100%;
-  display: grid;
-}
-
-/* .Video-1 iframe{
+.Video-1 iframe{
   width: 770px;
   height: 500px;
 }
@@ -203,8 +158,7 @@ body {
 .Video-2 iframe{
   width: 770px;
   height: 500px;
-} */
-
+}
 
 
 /* Productos */
@@ -223,7 +177,7 @@ body {
   
   }
   
-.productos-container2 .Producto-1, .Producto-2, .Producto-3, .Producto-4, .Producto-5, .Producto-6, .Producto-7, .Producto-8, .Producto-9, .Producto-10, .Producto-11, .Producto-12{
+.productos-container2 .Productos{
     width: 220px;
     height: 350px;
     background-color: white;
@@ -236,17 +190,17 @@ body {
   
   }
   
-.productos-container2 .Producto-1:hover, .Producto-2:hover, .Producto-3:hover, .Producto-4:hover, .Producto-5:hover, .Producto-6:hover, .Producto-7:hover, .Producto-8:hover, .Producto-9:hover, .Producto-10:hover, .Producto-11:hover, .Producto-12:hover{
+.productos-container2 .Productos:hover{
     transform: translateY(-15px);
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0,2);
   }
   
-.productos-container2 .Producto-1 img, .Producto-2 img, .Producto-3 img, .Producto-4 img, .Producto-5 img, .Producto-6 img, .Producto-7 img, .Producto-8 img, .Producto-9 img, .Producto-10 img, .Producto-11 img, .Producto-12 img{
+.productos-container2 .Productos img{
     width: 220px;
     height: 230px;
   }
   
-.productos-container2 .Producto-1 a, .Producto-2 a, .Producto-3 a, .Producto-4 a, .Producto-5 a, .Producto-6 a, .Producto-7 a, .Producto-8 a, .Producto-9 a, .Producto-10 a, .Producto-11 a, .Producto-12 a{
+.productos-container2 .Productos a{
     text-decoration: none; 
     font-size: auto;
     color: #0a5cb8ff;
