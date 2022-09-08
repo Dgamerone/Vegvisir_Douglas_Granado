@@ -1,10 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap");
+.main-contacto .formulario input, .main-contacto .formulario textarea {
+  padding: 0.5rem;
+  border-radius: 1rem;
+  width: 17rem; }
+
 /* CSS HEX
 --black: #000000ff;
 --eerie-black: #1a1a1aff;
 --dim-gray: #666a68ff;
 --denim: #0a5cb8ff;
 --white: #ffffffff; */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -26,9 +31,9 @@ header .texto_superior {
 /* NavBar */
 header .container-fluid {
   display: flex;
-  flex-wrap: inherit;
-  align-items: center;
-  justify-content: space-around; }
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center; }
 
 header .navbar-brand {
   margin-left: 5rem; }
@@ -41,6 +46,7 @@ header .d-flex {
 header .navbar {
   background-color: #1a1a1aff;
   display: flex;
+  flex-flow: none none;
   justify-content: space-around;
   align-items: center; }
 
@@ -171,23 +177,6 @@ form .btn:hover {
   font-size: auto;
   color: #1a1a1aff; }
 
-/* Footer */
-footer {
-  background-color: #1a1a1aff;
-  padding: 1rem; }
-  footer .social {
-    display: flex;
-    width: 30px; }
-  footer .redes-sociales {
-    display: flex;
-    list-style: none;
-    margin: auto;
-    justify-content: space-evenly;
-    align-items: center; }
-    footer .redes-sociales .copy {
-      color: white;
-      align-items: center; }
-
 /* Grid Index*/
 .main-index,
 .main-nosotros,
@@ -278,26 +267,35 @@ footer {
   padding: 2rem; }
   .main-contacto .formulario {
     display: flex;
-    padding: 2rem;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    padding: 2rem;
     margin: 0 auto;
     width: 350px;
     height: 450px;
     background-color: white;
     border-radius: 2rem; }
-  .main-contacto .formulario input {
-    padding: 0.5rem;
-    border-radius: 1rem;
-    width: 17rem; }
-  .main-contacto .formulario textarea {
-    padding: 0.5rem;
-    border-radius: 1rem;
-    width: 17rem; }
   .main-contacto .formulario .submit {
     border-radius: 1rem;
     width: 5rem; }
+
+/* Footer */
+footer {
+  background-color: #1a1a1aff;
+  padding: 1rem; }
+  footer .social {
+    display: flex;
+    width: 30px; }
+  footer .redes-sociales {
+    display: flex;
+    list-style: none;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center; }
+    footer .redes-sociales .copy {
+      color: white;
+      align-items: center; }
 
 /* Medias Query */
 @media (max-width: 605px) {

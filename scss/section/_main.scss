@@ -1,0 +1,272 @@
+/* Main */
+
+.banners {
+  width: 100%;
+  display: flex;
+}
+
+.title {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Articulos Destacados */
+
+.main-index,
+.main-index,
+.main-nosotros,
+.main-contacto,
+.main-productos,
+.main-carrito {
+  background: rgb(102, 106, 104);
+  background: radial-gradient(
+    circle,
+    rgba(102, 106, 104, 1) 0%,
+    rgba(102, 106, 104, 1) 35%,
+    rgba(10, 92, 184, 1) 100%
+  );
+}
+
+.main-index {
+  color: rgb(255, 255, 255);
+}
+
+.productos-container {
+  width: 600px;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin: auto;
+}
+
+.productos-container .Producto-index {
+  width: 220px;
+  height: 350px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 30px;
+  text-align: center;
+  transition: all 0.25s;
+}
+
+.productos-container .Producto-index:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.productos-container .Producto-index img {
+  width: 220px;
+  height: 230px;
+}
+
+.productos-container .Producto-index a {
+  text-decoration: none;
+  font-size: auto;
+  color: #0a5cb8ff;
+  font-weight: bold;
+}
+
+.productos-container {
+  font-size: auto;
+  color: #1a1a1aff;
+}
+
+/* Videos */
+
+.Video-1 iframe {
+  width: 770px;
+  height: 500px;
+}
+
+.Video-2 iframe {
+  width: 770px;
+  height: 500px;
+}
+
+/* Productos */
+
+.main-productos {
+  color: white;
+}
+
+.productos-container2 {
+  width: 600px;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin: auto;
+}
+
+.productos-container2 .Productos {
+  width: 220px;
+  height: 350px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 30px;
+  text-align: center;
+  transition: all 0.25s;
+}
+
+.productos-container2 .Productos:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.productos-container2 .Productos img {
+  width: 220px;
+  height: 230px;
+}
+
+.productos-container2 .Productos a {
+  text-decoration: none;
+  font-size: auto;
+  color: #0a5cb8ff;
+  font-weight: bold;
+}
+
+.productos-container2 {
+  font-size: auto;
+  color: #1a1a1aff;
+}
+
+/* Grid Index*/
+.main-index,
+.main-nosotros,
+.main-contacto,
+.main-productos,
+.main-carrito .title {
+  color: white;
+}
+
+.productos-container {
+  @include grid (grid, 6, 1, row);
+  grid-template-areas:
+    "Producto-1 Producto-2 Producto-3 Producto-4 Producto-5 Producto-6"
+    "Video-1 Video-1 Video-1 Video-2 Video-2 Video-2";
+  justify-items: center;
+  align-items: center;
+}
+
+.Producto-1 {
+  grid-area: Producto-1;
+}
+
+.Producto-2 {
+  grid-area: Producto-2;
+}
+
+.Producto-3 {
+  grid-area: Producto-3;
+}
+
+.Producto-4 {
+  grid-area: Producto-4;
+}
+
+.Producto-5 {
+  grid-area: Producto-5;
+}
+
+.Producto-6 {
+  grid-area: Producto-6;
+}
+
+.Video-1 {
+  grid-area: Video-1;
+}
+
+.Video-2 {
+  grid-area: Video-2;
+}
+
+/* Grid Productos */
+
+.productos-container2 {
+  @include grid (grid, 6, 2, row);
+  grid-template-areas:
+    "Producto-1 Producto-2 Producto-3 Producto-4 Producto-5 Producto-6"
+    "Producto-7 Producto-8 Producto-9 Producto-10 Producto-11 Producto-12";
+}
+
+.Producto-1 {
+  grid-area: Producto-1;
+}
+
+.Producto-2 {
+  grid-area: Producto-2;
+}
+
+.Producto-3 {
+  grid-area: Producto-3;
+}
+
+.Producto-4 {
+  grid-area: Producto-4;
+}
+
+.Producto-5 {
+  grid-area: Producto-5;
+}
+
+.Producto-6 {
+  grid-area: Producto-6;
+}
+
+.Producto-7 {
+  grid-area: Producto-7;
+}
+
+.Producto-8 {
+  grid-area: Producto-8;
+}
+
+.Producto-9 {
+  grid-area: Producto-9;
+}
+
+.Producto-10 {
+  grid-area: Producto-10;
+}
+
+.Producto-11 {
+  grid-area: Producto-11;
+}
+
+.Producto-12 {
+  grid-area: Producto-12;
+}
+
+/* Formulario de Contacto */
+
+.main-contacto {
+  padding: 2rem;
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin: 0 auto;
+    width: 350px;
+    height: 450px;
+    background-color: white;
+    border-radius: 2rem;
+  }
+  .formulario input {
+    @extend %styleForm;
+  }
+  .formulario textarea {
+    @extend %styleForm;
+  }
+  .formulario .submit {
+    border-radius: 1rem;
+    width: 5rem;
+  }
+}
+

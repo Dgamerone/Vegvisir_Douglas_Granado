@@ -1,0 +1,13 @@
+Agregue lo siguiente:
+- Index (Keywords): Vegvisir, ropa, accesorios, calzado, deporte, urbano, casual, exclusivo.
+- Index (Description): Vegvisir es tu tienda online en ropa, calzado y accesorios exclusivos para ti.
+- Nosotros (Keywords): Vegvisir, conocenos, nosotros.
+- Nosotros (Description): Somos un empredimiento online que busca brindarle exclusividad a nuestros clientes.
+- Productos (Keywords): Vegvisir, ropa, accesorios, calzado, deporte, remera, pantalon, bolso, zapatillas.
+- Productos (Description): Vegvisir es tu tienda online en ropa, calzado y accesorios exclusivos para ti.
+- Contacto (Keywords): contacto, ayuda, atención, sugerencias, comentartios, ropa, accesorios.
+- Contacto (Description): Tus comentarios y/o sugerencias nos ayudan a mejorar, dejanos una.
+- Carrito (Keywords): Vegvisir, comprar, resumen, pagar, ver, carrito, confirmar.
+- Carrito (Description): Visualiza y confirma tu compra.
+
+A su vez modifique los titulos, agregandole el nombre de la marca antes de la sección, ejemplo (Vegvisir | Inicio).

@@ -1,0 +1,62 @@
+/* Information Bar */
+
+header {
+  .texto_superior {
+    background-color: rgb(0, 0, 0);
+    margin: 0%;
+    padding: 1rem;
+    font-size: auto;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+  }
+}
+
+/* NavBar */
+
+header {
+  .container-fluid {
+    @include flexible ( flex , row , wrap , space-around , center );
+  }
+
+  .navbar-brand {
+    margin-left: 5rem;
+    img {
+      width: 4rem;
+    }
+  }
+
+  .d-flex {
+    margin-right: 5rem;
+  }
+
+  .navbar {
+    background-color: #1a1a1aff;
+    @include flexible ( flex , none , none , space-around , center );
+  }
+  
+  li {
+    text-decoration: none;
+    font-weight: bold;
+    .nav-link {
+      color: white;
+    }
+    .nav-link:hover {
+      color: #0a5cb8ff;
+      font-size: larger;
+    }
+  }
+}
+
+form {
+  .btn {
+    border-color: white;
+    color: white;
+  }
+
+  .btn:hover {
+    background-color: #0a5cb8ff;
+    border-color: white;
+    transform: scale(105%);
+  }
+}

@@ -1,0 +1,18 @@
+@mixin flexible( $dis , $direction , $corte , $just , $align ) {
+    display: $dis;
+    flex-flow: $direction $corte;
+    justify-content: $just;
+    align-items: $align;
+}
+
+@mixin grid ($dis, $columns, $rows, $auto) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    grid-template-rows: repeat($rows, 1fr);
+    grid-auto-flow: row;
+    
+
+
+    
+}
+
