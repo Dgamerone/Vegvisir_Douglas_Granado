@@ -1,23 +1,40 @@
 /* Medias Query */
 
-@media (max-width: 605px) {
-  footer {
-    justify-content: space-around;
+@media (max-width: 992px) {
+  .productos-container2 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+      "Producto-1 Producto-2 Producto-3"
+      "Producto-4 Producto-5  Producto-6"
+      "Producto-7 Producto-8 Producto-9"
+      "Producto-10 Producto-11 Producto-12";
+  }
+
+  .container-nosotros {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+      "Vegvisir-Texto"
+      "Imagen-Vegvisir"
+      "Quienes-Somos-Texto"
+      "Imagen-Quienes-Somos"
+      "Objetivos-Texto"
+      "Imagen-Objetivos";
     align-items: center;
-    flex-direction: column-reverse;
+    justify-content: space-evenly;
   }
 
-  .footer .social {
-    width: 15px;
+  .img-nosotros {
+    width: 750px;
   }
+}
 
-  .banners {
-    width: 100%;
-  }
-
+@media (max-width: 605px) {
   .productos-container {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     grid-template-areas:
       "Producto-1 Producto-2"
       "Video-1 Video-1"
@@ -47,26 +64,41 @@
       "Producto-9 Producto-10"
       "Producto-11 Producto-12";
   }
-}
 
-@media (max-width: 992px) {
-  .productos-container {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+  .container-nosotros {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
     grid-template-areas:
-      "Producto-1 Producto-2 Producto-3"
-      "Video-1 Video-1 Video-1"
-      "Producto-4 Producto-5 Producto-6"
-      "Video-2 Video-2 Video-2";
+      "Vegvisir-Texto"
+      "Imagen-Vegvisir"
+      "Quienes-Somos-Texto"
+      "Imagen-Quienes-Somos"
+      "Objetivos-Texto"
+      "Imagen-Objetivos";
+    align-items: center;
+    justify-content: space-evenly;
   }
 
-  .productos-container2 {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-areas:
-      "Producto-1 Producto-2 Producto-3"
-      "Producto-4 Producto-5  Producto-6"
-      "Producto-7 Producto-8 Producto-9"
-      "Producto-10 Producto-11 Producto-12";
+  .img-nosotros {
+    width: 550px;
+  }
+
+  footer {
+    .social {
+      width: 20px;
+    }
+
+    .Lista_1 {
+      padding: 0.1rem;
+      font-weight: bold;
+      font-size: 0.8rem;
+    }
+
+    .text-reset {
+      padding: 0.1rem;
+      text-decoration: none;
+      font-size: 0.6rem;
+    }
   }
 }

@@ -1,35 +1,106 @@
 /* Main */
 
-.banners {
-  width: 100%;
-  display: flex;
-}
-
 .title {
   text-align: center;
-  padding: 20px;
+  padding-top: 1.5rem;
+  font-weight: bold;
+}
+
+// Nosotros Grid
+
+.container-nosotros {
+  display: grid;
+  padding: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "Vegvisir-Texto Imagen-Vegvisir "
+    "Imagen-Quienes-Somos Quienes-Somos-Texto "
+    "Objetivos-Texto Imagen-Objetivos";
+  grid-auto-flow: row;
+  align-items: center;
+  justify-items: center;
+}
+
+.Vegvisir-Texto {
+  grid-area: Vegvisir-Texto;
+}
+
+.Imagen-Vegvisir {
+  grid-area: Imagen-Vegvisir;
+}
+
+.Imagen-Quienes-Somos {
+  grid-area: Imagen-Quienes-Somos;
+}
+
+.Quienes-Somos-Texto {
+  grid-area: Quienes-Somos-Texto;
+}
+
+.Objetivos-Texto {
+  grid-area: Objetivos-Texto;
+}
+
+.Imagen-Objetivos {
+  grid-area: Imagen-Objetivos;
+}
+
+// Estilo y tamaños a textos
+
+.Titulo_Nosotros {
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 2rem;
+  font-weight: bold;
+}
+
+.Texto_Nosotros {
+  text-align: justify;
+  font-size: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.img-nosotros {
+  border-radius: 1rem;
+  width: 600px;
+}
+
+/* Backgrounds Secciones */
+
+.main-index,
+.main-productos {
+  background-image: url(https://res.cloudinary.com/dgamerone/image/upload/v1663074833/Background_Index_Products_m5wvsv.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-carrito {
+  background-image: url(https://res.cloudinary.com/dgamerone/image/upload/v1663074476/Background_Carrito_xmhaal.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+.main-nosotros {
+  background-image: url(https://res.cloudinary.com/dgamerone/image/upload/v1663074477/Background_Nosotros_wjulno.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+.main-contacto {
+  background-image: url(https://res.cloudinary.com/dgamerone/image/upload/v1663074476/BackGround_Contactanos_i3jdtm.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 }
 
 /* Articulos Destacados */
-
-.main-index,
-.main-index,
-.main-nosotros,
-.main-contacto,
-.main-productos,
-.main-carrito {
-  background: rgb(102, 106, 104);
-  background: radial-gradient(
-    circle,
-    rgba(102, 106, 104, 1) 0%,
-    rgba(102, 106, 104, 1) 35%,
-    rgba(10, 92, 184, 1) 100%
-  );
-}
-
-.main-index {
-  color: rgb(255, 255, 255);
-}
 
 .productos-container {
   width: 600px;
@@ -42,7 +113,7 @@
 
 .productos-container .Producto-index {
   width: 220px;
-  height: 350px;
+  height: 370px;
   background-color: white;
   border-radius: 15px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
@@ -58,8 +129,11 @@
 }
 
 .productos-container .Producto-index img {
-  width: 220px;
+  width: 210px;
   height: 230px;
+  border: 0.1rem solid darkgrey;
+  border-radius: 1rem;
+  margin-top: 0.5rem;
 }
 
 .productos-container .Producto-index a {
@@ -103,10 +177,10 @@
 
 .productos-container2 .Productos {
   width: 220px;
-  height: 350px;
-  background-color: white;
-  border-radius: 15px;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  height: 370px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 1rem;
+  box-shadow: 0 2px 2px rgba(255, 255, 255, 0.2);
   overflow: hidden;
   margin: 30px;
   text-align: center;
@@ -119,8 +193,11 @@
 }
 
 .productos-container2 .Productos img {
-  width: 220px;
+  width: 210px;
   height: 230px;
+  border: 0.1rem solid darkgrey;
+  border-radius: 1rem;
+  margin-top: 0.5rem;
 }
 
 .productos-container2 .Productos a {
@@ -145,10 +222,12 @@
 }
 
 .productos-container {
-  @include grid (grid, 6, 1, row);
+  @include grid(grid, 3, 4, row);
   grid-template-areas:
-    "Producto-1 Producto-2 Producto-3 Producto-4 Producto-5 Producto-6"
-    "Video-1 Video-1 Video-1 Video-2 Video-2 Video-2";
+    "Producto-1 Producto-2 Producto-3"
+    "Video-1 Video-1 Video-1"
+    "Producto-4 Producto-5 Producto-6"
+    "Video-2 Video-2 Video-2";
   justify-items: center;
   align-items: center;
 }
@@ -188,10 +267,11 @@
 /* Grid Productos */
 
 .productos-container2 {
-  @include grid (grid, 6, 2, row);
+  @include grid(grid, 4, 3, row);
   grid-template-areas:
-    "Producto-1 Producto-2 Producto-3 Producto-4 Producto-5 Producto-6"
-    "Producto-7 Producto-8 Producto-9 Producto-10 Producto-11 Producto-12";
+    "Producto-1 Producto-2 Producto-3 Producto-4"
+    "Producto-5 Producto-6 Producto-7 Producto-8"
+    "Producto-9 Producto-10 Producto-11 Producto-12";
 }
 
 .Producto-1 {
@@ -242,6 +322,15 @@
   grid-area: Producto-12;
 }
 
+// Mi Carrito
+
+.imagen-micarrito {
+  .Mi_carrito {
+    width: 200px;
+    padding: 2rem;
+  }
+}
+
 /* Formulario de Contacto */
 
 .main-contacto {
@@ -269,4 +358,3 @@
     width: 5rem;
   }
 }
-

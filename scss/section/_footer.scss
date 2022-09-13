@@ -1,24 +1,42 @@
 /* Footer */
 
 footer {
+  font-family: "Roboto";
   background-color: #1a1a1aff;
   padding: 1rem;
 
-  .social {
-    display: flex;
-    width: 30px;
+.social {
+    padding: 0.2rem;
+    width: 40px;
   }
 
-  .redes-sociales {
-    display: flex;
-    list-style: none;
-    margin: auto;
-    justify-content: space-evenly;
-    align-items: center;
-
-    .copy {
-      color: white;
-      align-items: center;
-    }
-  }
+.Lista_1{
+  padding: 0.1rem;
+  font-weight: bold;
 }
+
+.text-reset{
+  padding: 0.1rem;
+  text-decoration: none;
+}
+
+.d-flex {
+  display: flex!important;
+  justify-content: space-evenly;
+}
+
+
+img{
+  width: 50px;
+  }
+
+  .copy {
+    display: flex;
+    justify-content: initial;
+    text-decoration: none;
+    font-family: "Roboto";
+    font-size: 0.7rem;
+      
+    }
+}
+
